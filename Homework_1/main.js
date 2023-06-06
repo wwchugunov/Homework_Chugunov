@@ -6,6 +6,14 @@ notebook = 90.2345;
 
 let summ = sneakers + watch + notebook
 
+function minmax(sneakers, watch, notebook) {
+    let min = Math.min(sneakers, watch, notebook);
+    let max = Math.max(sneakers, watch, notebook);
+    console.log(`Мінімальна ціна:${min} \nМаксимальна ціна ${max} \nВартість всіхтоварів: ${summ}`);
+    return  [min, max];
+}
+
+
 console.log(`Виведіть суму решти, при оплаті всіх товарів (без округлення), якщо клієнт платить 500 грн. \nРішення:  ${summ - 500}`)
 
 console.log(`Використовуючи вбудований об'єкт Math – виведіть максимальне число \nРішення:  ${Math.ceil(sneakers)} `)
@@ -32,3 +40,4 @@ discount = discount.toFixed(2);
 console.log(`Зробіть клієнту випадкову знижку та виведіть суму до оплати округлену до 2 знаків після коми. \nРішення:  ${discount}`);
 
 
+minmax(sneakers, watch, notebook)   
