@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    background: rgb(186, 186, 186);
+    height: 100vh;
+  }
+  
+  .header__title {
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  
+  .box-flex {
+    display: flex;
+  }
+  
+  .box-left {
+    width: 30%;
+  }
+  
+  .box-ProfitCalculation__content {
+    display: block;
+    text-align: center;
+  }
+  
+  .box-ProfitCalculation__title {
+    padding-bottom: 20px;
+  }
+  
+  .box-ProfitCalculation__content input {
+    width: 250px;
+    border: none;
+    margin: 5px;
+  }
+  
+  .box-ProfitCalculation__content button {
+    padding: 5px;
+    border: none;
+    background: rgba(22, 5, 116, 0.678);
+    padding: 3px;
+    border-radius: 5px;
+    color: gold;
+    margin-top: 30px;
+  }
+  
+  .box-right {
+    width: 70%;
+    background: rgb(234, 240, 155);
+    font-size: 14px;
+  }
+  
+  .info-box__content {
+    position: relative;
+    width: 100%;
+  }
+  
