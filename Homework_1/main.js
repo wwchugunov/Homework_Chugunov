@@ -1,43 +1,61 @@
-let sneakers, watch, notebook, nocoins
-
+let infobox = document.getElementById('info-box__content')
 sneakers = 15.678;
 watch = 123.965;
 notebook = 90.2345;
 
-let summ = sneakers + watch + notebook
+let maxnum = Math.ceil(sneakers)
+console.log(maxnum)
+let minnum = Math.floor(sneakers)
+console.log(minnum)
+let WholeAmount = (sneakers + watch + notebook)
+console.log(WholeAmount)
+let  noKopecks = Math.floor(sneakers + watch + notebook)
+console.log(noKopecks)
+let rounding = (Math.ceil(noKopecks / 100) * 100)
+console.log(rounding)
+let isOdd = (rounding % 2 !== 0);
+console.log(isOdd)
+let summall = (sneakers + watch + notebook - 500);
+console.log(summall)
+let randomDiscount = Math.random() * (sneakers,  notebook) + sneakers 
+console.log(randomDiscount.toFixed(2))
 
+
+function randomDiscountf () {
+    let summ = document.getElementById('prise').value
+    console.log(`Сума: ${summ}`)
+    let  discont = document.getElementById('discont').value / 100;
+    console.log(`Знижка: ${discont * 100}%`)
+    let result = summ / 2
+    console.log(`Делим на 2: ${result}`)
+    let netPoint = result - (result * discont)
+    console.log(`Прибуток: ${netPoint}`)
+    alert(`Прибуток: ${netPoint}`)
+}
+
+let min, max
 function minmax(sneakers, watch, notebook) {
-    let min = Math.min(sneakers, watch, notebook);
-    let max = Math.max(sneakers, watch, notebook);
-    console.log(`Мінімальна ціна:${min} \nМаксимальна ціна ${max} \nВартість всіхтоварів: ${summ}`);
+     min = Math.min(sneakers, watch, notebook);
+     max = Math.max(sneakers, watch, notebook);
+    console.log(`Мінімальна ціна:${min} \nМаксимальна ціна ${max}`);
     return  [min, max];
 }
 
-
-console.log(`Виведіть суму решти, при оплаті всіх товарів (без округлення), якщо клієнт платить 500 грн. \nРішення:  ${summ - 500}`)
-
-console.log(`Використовуючи вбудований об'єкт Math – виведіть максимальне число \nРішення:  ${Math.ceil(sneakers)} `)
-
-console.log(`Використовуючи вбудований об'єкт Math – виведіть мінімальне число \nРішення:  ${Math.floor(sneakers)}`) 
-
-console.log(`Складіть вартість всіх товарів, помістіть її в змінну та виведіть цю суму \nРішення:  ${summ}`) 
-
-sneakers = Math.floor(sneakers);
-watch = Math.floor(watch);
-notebook = Math.floor(notebook);
-
-nocoins = sneakers + watch + notebook
-console.log(`Відкиньте копійки у всіх товарів, потім – складіть цілу частину вартості кожного товару між собою.\nРішення:  ${nocoins}`)
-
-nocoins = Math.ceil(nocoins / 100) * 100;
-console.log(`Виведіть суму товарів округлену до сотень. (Наприклад якщо вийшло 260, то виведіть 300) \nРішення:  ${nocoins}`);
-
-let isOdd = nocoins % 2 !== 0;
-console.log(`Виведіть булеве значення: чи є сума всіх товарів (округлена в меншу сторону) парним чи непарним числом? \nРішення:  ${isOdd}`)
-
-let discount = Math.random() * (sneakers -  watch);
-discount = discount.toFixed(2);
-console.log(`Зробіть клієнту випадкову знижку та виведіть суму до оплати округлену до 2 знаків після коми. \nРішення:  ${discount}`);
+minmax(sneakers, watch, notebook)
 
 
-minmax(sneakers, watch, notebook)   
+let boxContent = `
+Завдання<br>&emsp;
+Мінімальна сума <span style="color: red;">${min}</span><br>&emsp;
+Максимальна сума <span style="color: red;">${max}</span><br>&emsp;
+Використовуючи вбудований об'єкт Math – виведіть максимальне число:  <span style="color: red;"> ${maxnum}</span><br>&emsp; 
+Використовуючи вбудований об'єкт Math – виведіть мінімальне число:   <span style="color: red;">${minnum}</span><br>&emsp;
+Складіть вартість всіх товарів, помістіть її в змінну та виведіть цю суму:   <span style="color: red;">${WholeAmount}</span><br>&emsp;
+Відкиньте копійки у всіх товарів, потім – складіть цілу частину вартості кожного товару між собою.:   <span style="color: red;">${noKopecks}</span><br>&emsp;
+Виведіть булеве значення: чи є сума всіх товарів (округлена в меншу сторону) парним чи непарним числом?:  <span style="color: red;">${isOdd}</span><br>&emsp;
+Виведіть суму решти, при оплаті всіх товарів (без округлення), якщо клієнт платить 500 грн.:  <span style="color: red;">${isOdd}</span><br>&emsp;
+Виведіть булеве значення: чи є сума всіх товарів (округлена в меншу сторону) парним чи непарним числом?:  <span style="color: red;">${summall}</span><br>&emsp;
+Зробіть клієнту випадкову знижку та виведіть суму до оплати округлену до 2 знаків після коми.:  <span style="color: red;">${randomDiscount.toFixed(2)}</span><br>&emsp;
+`;
+
+infobox.innerHTML = boxContent;
