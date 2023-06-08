@@ -28,8 +28,7 @@ function randomDiscountf() {
     let profit = discountedPrice - cost;
     alert(`Чистий прибуток: ${profit} грн`);
 }
-  
-let min, max
+
 function minmax(sneakers, watch, notebook) {
      min = Math.min(sneakers, watch, notebook);
      max = Math.max(sneakers, watch, notebook);
