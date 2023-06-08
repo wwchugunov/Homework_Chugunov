@@ -20,7 +20,6 @@ console.log(summall)
 let randomDiscount = Math.random() * (sneakers,  notebook) + sneakers 
 console.log(randomDiscount.toFixed(2))
 
-
 function randomDiscountf() {
     let price = parseFloat(document.getElementById('prise').value);
     let cost = price * 0.5;
@@ -30,11 +29,6 @@ function randomDiscountf() {
     alert(`Чистий прибуток: ${profit} грн`);
 }
   
-
-
-
-
-
 let min, max
 function minmax(sneakers, watch, notebook) {
      min = Math.min(sneakers, watch, notebook);
@@ -44,7 +38,6 @@ function minmax(sneakers, watch, notebook) {
 }
 
 minmax(sneakers, watch, notebook)
-
 
 let boxContent = `
 Завдання<br>&emsp;
