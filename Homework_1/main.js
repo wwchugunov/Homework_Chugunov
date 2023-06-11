@@ -5,23 +5,14 @@ watch = 123.965;
 notebook = 90.2345;
 
 let maxnum = Math.ceil(sneakers)
-console.log(maxnum)
 let minnum = Math.floor(sneakers)
-console.log(minnum)
 let WholeAmount = (sneakers + watch + notebook)
-console.log(WholeAmount)
 let summallround = Math.round(WholeAmount);
-console.log(summallround)
 let  noKopecks = Math.floor(sneakers + watch + notebook)
-console.log(noKopecks)
 let rounding = (Math.ceil(noKopecks / 100) * 100)
-console.log(rounding)
 let isOdd = (rounding % 2 !== 0);
-console.log(isOdd)
 let summall = (sneakers + watch + notebook - 500);
-console.log(summall)
 let randomDiscount = Math.random() * (sneakers,  notebook) + sneakers 
-console.log(randomDiscount.toFixed(2))
 let average = ((sneakers + watch + notebook  / 3).toFixed(2));
 
 function randomDiscountf() {
@@ -58,31 +49,3 @@ let boxContent = `
 
 infobox.innerHTML = boxContent;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-let phoneNumber = prompt('Введите номер телефона');
-
-
-document.writeln(phoneNumber);
-
-=======
-
-
-
-
->>>>>>> 3afd8c903dec80745fe681644d9e6812cc2f8b26
