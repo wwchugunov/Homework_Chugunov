@@ -26,7 +26,6 @@ function randomDiscountf() {
 function minmax(sneakers, watch, notebook) {
      min = Math.min(sneakers, watch, notebook);
      max = Math.max(sneakers, watch, notebook);
-     console.log(`Мінімальна ціна:${min} \nМаксимальна ціна ${max}`);
      return  [min, max];
 }
 
