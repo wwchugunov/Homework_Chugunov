@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+  }
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    height: auto;
+}
+
+
+.header-dg{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header__title {
+    text-align: center;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+  }
+  
+  
+.header__content-box{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    height: 85vh;
+    overflow: auto;
+}
+
+.header__content-box::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .header__content-box::-webkit-scrollbar-thumb {
+    background-color: #cd28ff;
+  }
+  
+  .header__content-box::-webkit-scrollbar-thumb:hover {
+    background-color: #14ff5a;
+  }
+  
+  .header__content-box::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+    
+
+
+.header__content-item{
+    position: relative;
+    width: 300px;
+    height: 170px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    background: #839fcbad;
+}
+
+.content-title{
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    padding: 5px;
+}
+
+.content-title::after{
+    content: " ";
+    position: absolute;
+    width: 65%;
+    background: white;
+    height: 1px;
+    left: 46px;
+    top: 26px;
+    margin: 0 auto;
+}
+
+.style-inputs{
+    text-align: center;
+    display: block;
+    margin: 9px auto;
+    border: none;
+    background: #fffdfd;
+    border-radius: 5px;
+    color: #a16e6e;
+}
+
+.style-results-box{
+    width: 80%;
+    height: 54px;
+    margin: 0 auto;
+    background: #ffffffab;
+    color: black;
+    font-size: 11px;
+}
+
+.fnc-btn{
+    display: block;
+    margin: 16px auto;
+    width: 50%;
+    height: 22px;
+    border: none;
+    color: green;
+    font-weight: 700;
+    font-family: emoji;
+    background: #cfd2eb;
+}
