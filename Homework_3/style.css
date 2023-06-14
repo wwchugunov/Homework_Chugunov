@@ -114,3 +114,26 @@ input:focus {
     font-family: emoji;
     background: #cfd2eb;
 }
+
+
+@media only screen and (max-width: 1010px) {
+  .header__content-box{
+    display: grid;
+    grid-template-columns: auto  auto;
+    justify-content: center;
+    height: 85vh;
+    overflow: auto;
+}
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .header__content-box{
+    display: grid;
+    grid-template-columns:  auto;
+    justify-content: center;
+    height: 85vh;
+    overflow: auto;
+}
+}
